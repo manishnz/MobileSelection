@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.PaymentActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp">
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwCustomerDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_span="2"
+                android:textSize="18dp"
+                android:text="@string/customerDetail" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwPayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Name" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/tvwPaymentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwPayAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Address" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/tvwPaymentAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwPayZip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Zip" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/tvwPaymentZip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwPayPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Phone No" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/tvwPaymentPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwPayEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Email" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/tvwPaymentEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwOrderBranch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Order Branch" />
+
+            <Spinner
+                android:id="@+id/ddlOrderBranch"
+                android:paddingLeft="10dp"
+                android:background="@drawable/ddl_cutom_border"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwCardDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_span="2"
+                android:textSize="18dp"
+                android:text="@string/cardDetail" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwCreditCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Credit Card Number" />
+
+            <EditText
+                android:id="@+id/txtCreditCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:maxLength="16"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwCardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Holder's Name"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtCardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwCardExpiry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Expiration Date" />
+
+            <TableLayout>
+                <TableRow
+                    android:paddingLeft="10dp">
+                    <Spinner
+                        android:id="@+id/ddlCardMonth"
+                        android:layout_width="100dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/ddl_cutom_border"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/ddlCardYear"
+                        android:layout_width="100dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/ddl_cutom_border"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvwCardCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Verification Code" />
+
+            <EditText
+                android:id="@+id/txtCardCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="3"
+                android:paddingLeft="10dp"
+                android:ems="10"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnPay"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:onClick="btnPay_OnClick"
+                android:scaleType="fitCenter"
+                android:tooltipText="Pay Now"
+                app:srcCompat="@drawable/pay" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

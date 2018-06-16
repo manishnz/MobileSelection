@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Mobile Selection</string>
+    <string name="productSpecification"><u>Product Specifications</u></string>
+    <string name="customerDetail"><u>Customer Details</u></string>
+    <string name="cardDetail"><u>Credit Card Details</u></string>
+    <string-array name="order_Quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="card_months">
+        <item>Month</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="card_years">
+        <item>Year</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+    </string-array>
+
+    <string-array name="make">
+        <item>Select</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+    </string-array>
+    <string-array name="processor">
+        <item>Select</item>
+        <item>1.6 GHz</item>
+        <item>1.8 GHz</item>
+        <item>2.0 GHz</item>
+        <item>2.1 GHz</item>
+        <item>2.2 GHz</item>
+        <item>2.3 GHz</item>
+        <item>2.4 GHz</item>
+        <item>2.5 GHz</item>
+        <item>2.6 GHz</item>
+        <item>2.7 GHz</item>
+    </string-array>
+    <string-array name="ram">
+        <item>Select</item>
+        <item>2 GB</item>
+        <item>3 GB</item>
+        <item>4 GB</item>
+        <item>6 GB</item>
+        <item>8 GB</item>
+    </string-array>
+    <string-array name="memory">
+        <item>Select</item>
+        <item>8 GB</item>
+        <item>16 GB</item>
+        <item>32 GB</item>
+        <item>64 GB</item>
+        <item>128 GB</item>
+        <item>256 GB</item>
+    </string-array>
+    <string-array name="camera">
+        <item>Select</item>
+        <item>8 MP</item>
+        <item>10 MP</item>
+        <item>12 MP</item>
+        <item>13 MP</item>
+        <item>14 MP</item>
+        <item>16 MP</item>
+        <item>20 MP</item>
+    </string-array>
+</resources>

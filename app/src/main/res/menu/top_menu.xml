@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Profile"
+        android:id="@+id/mnuProfile"
+        android:icon="@drawable/profile"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:title="View Profile"
+                android:id="@+id/mnuViewProfile"
+                app:showAsAction="always"></item>
+            <item
+                android:title="Sign Out"
+                android:id="@+id/mnuSignOut"
+                app:showAsAction="always"></item>
+        </menu>
+    </item>
+    <item
+        android:title="Cart"
+        android:id="@+id/mnuBadge"
+        android:actionLayout="@layout/badge"
+        android:icon="@drawable/notify"
+        app:showAsAction="always"></item>
+</menu>

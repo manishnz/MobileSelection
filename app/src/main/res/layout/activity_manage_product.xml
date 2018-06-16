@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    tools:context=".Activities.ManageProductActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:text="Brand"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/ddlProdBrand"
+                android:layout_width="@dimen/productSpin"
+                android:paddingLeft="5dp"
+                android:background="@drawable/ddl_cutom_border"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trProdModelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdModelText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Model"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtProdModel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLength="255"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/black"
+                android:inputType="text"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trProdModelDrop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdModelDrop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Model"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/ddlProdModel"
+                android:layout_width="@dimen/productSpin"
+                android:paddingLeft="5dp"
+                android:background="@drawable/ddl_cutom_border"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdMake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Make"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/ddlProdMake"
+                android:layout_width="@dimen/productSpin"
+                android:paddingLeft="5dp"
+                android:background="@drawable/ddl_cutom_border"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Price"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtProdPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLength="7"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/black"
+                android:inputType="numberDecimal"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdProcessor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Processor"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/ddlProdProcessor"
+                android:layout_width="@dimen/productSpin"
+                android:paddingLeft="5dp"
+                android:background="@drawable/ddl_cutom_border"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdRam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="RAM"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/ddlProdRam"
+                android:layout_width="@dimen/productSpin"
+                android:paddingLeft="5dp"
+                android:background="@drawable/ddl_cutom_border"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdMemory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Internal Memory"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/ddlProdMemory"
+                android:layout_width="@dimen/productSpin"
+                android:paddingLeft="5dp"
+                android:background="@drawable/ddl_cutom_border"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Camera"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/ddlProdCamera"
+                android:layout_width="@dimen/productSpin"
+                android:paddingLeft="5dp"
+                android:background="@drawable/ddl_cutom_border"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvwProdQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/black"
+                android:text="Quantity"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtProdQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:backgroundTint="@android:color/black"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/btnSubmit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:layout_span="4"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:scaleType="fitCenter"
+                android:onClick="btnSubmit_OnClick"
+                android:tooltipText="Submit"
+                android:src="@drawable/place_order" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

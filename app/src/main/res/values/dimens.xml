@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="productSpecPaddingTop">10dp</dimen>
+    <dimen name="padding_small">0dp</dimen>
+    <dimen name="dot">2dp</dimen>
+    <dimen name="productSpin">190dp</dimen>
+</resources>

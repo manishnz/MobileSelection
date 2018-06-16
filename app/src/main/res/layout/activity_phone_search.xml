@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="20dp"
+    tools:context=".Activities.PhoneSearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:text="Brand"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/ddlSearchBrand"
+            android:layout_width="@dimen/productSpin"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/ddl_cutom_border"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="Model"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:maxLength="255"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/black"
+            android:inputType="text"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="Make"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/ddlSearchMake"
+            android:layout_width="@dimen/productSpin"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/ddl_cutom_border"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="Price"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:maxLength="7"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/black"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwProcessor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="Processor"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/ddlSearchProcessor"
+            android:layout_width="@dimen/productSpin"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/ddl_cutom_border"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwRam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="RAM"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/ddlSearchRam"
+            android:layout_width="@dimen/productSpin"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/ddl_cutom_border"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwMemory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="Internal Memory"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/ddlSearchMemory"
+            android:layout_width="@dimen/productSpin"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/ddl_cutom_border"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvwCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/black"
+            android:text="Camera"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/ddlSearchCamera"
+            android:layout_width="@dimen/productSpin"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/ddl_cutom_border"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:onClick="btnSearch_OnClick"
+            android:tooltipText="Search"
+            android:src="@drawable/mobile_search" />
+    </LinearLayout>
+
+</LinearLayout>
